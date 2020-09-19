@@ -7,30 +7,30 @@ import { AccountSummary } from "./Components/AccountSummary";
 import { TransactionHistory } from "./Components/TransactionHistory";
 import { AddTransaction } from "./Components/AddTransaction";
 import  {Footer}  from "./Components/Footer";
-import firebase from "./Services/firebaseService";
+// import firebase from "./Services/firebaseService";
 
 // Import Provider
 import { GlobalProvider } from "./Context/GlobalState";
 
 function App() {
-  const messaging = firebase.messaging();
-  const firebaseMessaging = () => {
-    Notification.requestPermission().then((permission:any) => {
-      console.log(permission);
-      if(permission === 'granted'){
-        messaging.getToken().then((currentToken:any) => {
-          if (currentToken) {
-            console.log("Token:", currentToken);
-          } else {
-            console.log('No Instance ID token available. Request permission to generate one.');
-          }
-        }).catch((err:any) => {
-          console.log('An error occurred while retrieving token. ', err);
-        });
-      }
-    })
-  }
-  firebaseMessaging();
+  // const messaging = firebase.messaging();
+  // const firebaseMessaging = () => {
+  //   Notification.requestPermission().then((permission:any) => {
+  //     console.log(permission);
+  //     if(permission === 'granted'){
+  //       messaging.getToken().then((currentToken:any) => {
+  //         if (currentToken) {
+  //           console.log("Token:", currentToken);
+  //         } else {
+  //           console.log('No Instance ID token available. Request permission to generate one.');
+  //         }
+  //       }).catch((err:any) => {
+  //         console.log('An error occurred while retrieving token. ', err);
+  //       });
+  //     }
+  //   })
+  // }
+  // firebaseMessaging();
 
   return (
     <GlobalProvider>
