@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:ital,wght@1,700&display=swap");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+body {
+  background: url("./Image/Background-Image.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 0;
+  min-height: 100vh;
 }
-
-.App-link {
-  color: #61dafb;
+.app {
+  background-image: linear-gradient(
+    260deg,
+    rgba(143, 219, 219, 0.5),
+    rgba(15, 52, 71, 0.76)
+  );
+  padding: 10px 30px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header {
+  font-family: "Lora", serif;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+}
+.container {
+  margin: 30px auto;
+}
+.account_summary {
+  box-shadow: 4px 4px 4px 4px grey;
+  background-color: #dce8ed;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 10px 10px 10px;
+  margin: 20px 0 30px 0;
+}
+.account_summary > div {
+  flex: 1;
+  text-align: center;
+}
+.line-break {
+  border-right: 2px solid grey;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 30px !important;
+}
+ul li {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(223, 232, 243);
+  box-shadow: 0 2px 3px 1px grey;
+  margin: 8px 2px;
+  padding: 8px;
+}
+.minus {
+  border-right: 5px solid red;
+}
+.plus {
+  border-right: 5px solid green;
+}
+.delete {
+  padding: 0 5px !important;
+  position: absolute;
+  transform: translate(-130%, -5%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+ul li:hover .delete {
+  opacity: 1;
+}
+.footer {
+  text-align: center;
+  font-family: "Lora", serif;
 }
