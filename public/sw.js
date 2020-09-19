@@ -13,20 +13,6 @@ var urlsToCache = [
   "/static/media/fontawesome-webfont.fee66e71.woff",
   "/static/media/fontawesome-webfont.b06871f2.ttf",
   "/",
-
-  "http://expense-tracker-pwa-web-app.surge.sh/static/js/bundle.js",
-  "http://expense-tracker-pwa-web-app.surge.sh/static/js/main.chunk.js",
-  "http://expense-tracker-pwa-web-app.surge.sh/static/js/0.chunk.js",
-  "http://expense-tracker-pwa-web-app.surge.sh/static/js/1.chunk.js",
-  "http://expense-tracker-pwa-web-app.surge.sh/manifest.json",
-  "http://expense-tracker-pwa-web-app.surge.sh/index.html",
-  "http://expense-tracker-pwa-web-app.surge.sh/Logo.png",
-  "http://expense-tracker-pwa-web-app.surge.sh/logo192.png",
-  "http://expense-tracker-pwa-web-app.surge.sh/static/media/Background-Image.b29e66fb.jpg",
-  "http://expense-tracker-pwa-web-app.surge.sh/static/media/fontawesome-webfont.af7ae505.woff2",
-  "http://expense-tracker-pwa-web-app.surge.sh/static/media/fontawesome-webfont.fee66e71.woff",
-  "http://expense-tracker-pwa-web-app.surge.sh/static/media/fontawesome-webfont.b06871f2.ttf",
-  "http://expense-tracker-pwa-web-app.surge.sh/",
 ];
 
 self.addEventListener("install", function (event) {
