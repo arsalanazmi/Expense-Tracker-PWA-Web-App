@@ -65,7 +65,7 @@ export const AddTransaction = () => {
   const handleIncome = () => {
     // If any field is empty do not submit the Form.
     if (
-      description === ''
+      description === '' || transactionAmount === 0
     ) {
       return;
     }
@@ -81,7 +81,7 @@ export const AddTransaction = () => {
   const handleExpense = () => {
     // If any field is empty do not submit the Form.
     if (
-      description === ''
+      description === '' || transactionAmount === 0
     ) {
       return;
     }
@@ -105,7 +105,7 @@ export const AddTransaction = () => {
             required
             type="text"
             id="filled-required"
-            label="Description"
+            label="Transaction Description"
             variant="filled"
             className={classes.description}
             InputLabelProps={{
@@ -126,7 +126,7 @@ export const AddTransaction = () => {
             required
             id="filled-required"
             type="number"
-            label="Transaction"
+            label="Transaction Amount"
             variant="filled"
             className={classes.description}
             InputLabelProps={{
